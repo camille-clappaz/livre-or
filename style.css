@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.erreur {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+input {
+  caret-color: red;
+}
+/* Header */
+.banniere{
+  width: 100%;
+}
+.onglets {
+    width: 100%;
+    font-size: 40px;
+    position: absolute;
+    justify-content: space-around;
+    display: flex;
+    top: 20px;
+    
+}
+
+/* Formulaire inscription */
+main {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ecf0f3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: poppins;
+}
+
+.login-box {
+   background-image: url("../livre-or/nuages.jpg");
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+
+.user-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  text-align: left;
+  margin-top: 30px;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 4px #cbced1, inset -4px -4px 4px white;
+}
+
+button {
+  color: white;
+  margin-top: 20px;
+  background: #203b4e;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 4px 4px 4px #cbced1, -4px -4px 4px white;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+h2 {
+ margin:0;
+}
