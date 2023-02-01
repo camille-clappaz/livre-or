@@ -1,0 +1,14 @@
+                <?php for ($i = 0; $i < sizeof($result); $i++) : ?>
+                    <tr>
+                        <td><?= $result[$i]['date'] ?></td>
+                        <td><?= $result[$i]["login"] ?></td>
+                        <td><?= $result[$i]['commentaire'] ?></td>
+                    </tr>
+                <?php endfor; ?>
+            </tbody>
+        </table>
+    </div>
+    <!-- <?php for ($i = 0; $i < sizeof($result); $i++) : ?>
+        <h1>Posté le <?= $result[$i]['date'] ?> par <?= $result[$i]['login'] ?>:</h1>
+        <p><?= $result[$i]['commentaire'] ?></p><br>
+    <?php endfor; ?> -->

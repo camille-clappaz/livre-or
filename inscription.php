@@ -21,18 +21,15 @@ if( $mysqli->connect_error ) {
 </head>
 <?php include("header_include.php");?>
 <body>
-    <!-- <?php include('header-include.php');?> -->
     <main>
         <?php
         if (isset($_POST['submit'])) { // Permet de verifier la suite UNIQUEMENT si on appuie sur Submit
             //if(empty($_POST["login"]))  Si l'input est vide
-            if (!empty($_POST["login"]) && !empty($_POST["prenom"]) && !empty($_POST["nom"]) && !empty($_POST["password"])) {
+            if (!empty($_POST["login"])  && !empty($_POST["password"])) {
                 $login = $_POST['login'];
-                $prenom = $_POST['prenom'];
-                $nom = $_POST['nom'];
                 $password = $_POST['password'];
                 if ($_POST['password'] == $_POST['confirmpassword']) {
-                    $request = $mysqli->query("INSERT INTO utilisateurs ( login, prenom, nom, password) VALUES ( '$login', '$prenom', '$nom', '$password')");
+                    $request = $mysqli->query("INSERT INTO utilisateurs ( login, password) VALUES ( '$login','$password')");
                     header('Location:index.php');
                 } else {
                     echo "<p class='erreur'>Les mots de passe sont différents!</p>";
@@ -59,7 +56,7 @@ if( $mysqli->connect_error ) {
 
     </main>
     <footer>
-    <!-- <?php include('footer-include.php');?> -->
+    <?php include("footer_include.php");?>
     </footer>
 
 </body>

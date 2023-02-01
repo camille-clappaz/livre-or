@@ -9,8 +9,7 @@
 </head>
 <body>
     <footer>
-    <img class="banniere" src="banniere.jpg" alt="nuages_roses">
-    <a href=""></a>
+    <a href="https://github.com/camille-clappaz/livre-or.git">Repository GitHub</a>
     </footer>
 </body>
 </html>
